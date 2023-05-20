@@ -1,0 +1,58 @@
+<aside
+  id="separator-sidebar"
+  [ngClass]="{ 'translate-x-0': (sideBarService.sideBarState | async) }"
+  class="z-40 w-64 h-full transition-transform -translate-x-full lg:translate-x-0 absolute top-0 lg:relative"
+  aria-label="Sidebar"
+>
+  <div class="px-3 py-4 overflow-y-auto bg-normal-purple h-full">
+    <div
+      class="bg-dark-purple px-2 py-5 rounded-xl h-full flex flex-col justify-between"
+    >
+      <ul class="space-y-2 font-medium">
+        <ng-container *ngFor="let item of options">
+          <li *ngIf="!item.divider" class="cursor-pointer">
+            <a
+              [routerLink]="item.route"
+              class="grid grid-cols-[25px_1fr] gap-2 items-center p-2 rounded-lg text-white hover:bg-white group"
+            >
+              <i
+                [class]="item.icon"
+                class="text-lg text-center text-white transition duration-75 group-hover:text-green"
+              ></i>
+              <div>
+                <span class="group-hover:text-green">{{ item.option }}</span>
+                <span
+                  *ngIf="item.hasBadge"
+                  class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-white bg-normal-purple rounded-full group-hover:text-white group-hover:bg-green"
+                  >{{ item.badgeText }}</span
+                >
+              </div>
+            </a>
+          </li>
+          <li
+            *ngIf="item.divider"
+            class="h-[2px] bg-normal-purple mt-4 space-y-2"
+          ></li>
+        </ng-container>
+      </ul>
+
+      <ul
+        class="pt-4 mt-4 space-y-2 font-medium border-t-2 border-normal-purple w-full"
+      >
+        <li *ngFor="let item of bottomOptions" class="cursor-pointer">
+          <a
+            class="grid grid-cols-[25px_1fr] gap-2 items-center p-2 rounded-lg text-white hover:bg-white group"
+          >
+            <i
+              [class]="item.icon"
+              class="text-lg text-center text-white transition duration-75 group-hover:text-green"
+            ></i>
+            <div>
+              <span class="group-hover:text-green">{{ item.option }}</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>

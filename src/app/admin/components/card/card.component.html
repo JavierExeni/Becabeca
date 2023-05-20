@@ -1,0 +1,15 @@
+<div class="shadow-lg rounded-2xl h-full grid grid-rows-[auto_1fr_auto]">
+  <div class="bg-normal-purple p-4 rounded-t-2xl">
+    <h1 class="text-white font-semibold text-2xl lg:text-3xl">{{ title }}</h1>
+  </div>
+  <div class="p-4">
+    <ng-content></ng-content>
+  </div>
+  <div *ngIf="!buttonHidden" class="p-4">
+    <button
+      class="bg-green hover:bg-ligth-green rounded-xl py-2 text-center text-lg text-white w-full font-semibold shadow-md"
+    >
+      Participar
+    </button>
+  </div>
+</div>

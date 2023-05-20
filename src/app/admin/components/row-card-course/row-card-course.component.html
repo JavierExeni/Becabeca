@@ -1,0 +1,37 @@
+<div
+  (click)="open = !open"
+  class="border border-normal-purple rounded-full px-3 py-1 flex items-center justify-between"
+>
+  <div class="flex items-center gap-3 cursor-pointer">
+    <app-star-number [number]="1"></app-star-number>
+    <h2 class="font-semibold text-normal-purple text-xl">
+      Curso 1: Saludos y buenas practicas
+    </h2>
+  </div>
+  <i
+    [ngClass]="{ 'rotate-180': open }"
+    class="fa-solid fa-angle-down transition-all ease-in-out duration-300 text-normal-purple mr-2"
+  ></i>
+</div>
+
+<div *ngIf="open" class="mt-3">
+  <div
+    [routerLink]="['/admin/cursos/leccion']"
+    class="flex items-center gap-3 mx-4 py-2 border-b border-gray-400 cursor-pointer"
+  >
+    <span
+      class="bg-ligth-green flex justify-center items-center text-center rounded-full text-white font-semibold p-2 w-8 h-8"
+    >
+      1
+    </span>
+    <h3 class="text-base font-normal">Lección 1: Saludos básicos</h3>
+  </div>
+  <div class="flex items-center gap-3 mx-4 py-2 border-b border-gray-400">
+    <span
+      class="bg-ligth-green flex justify-center items-center text-center rounded-full text-white font-semibold p-2 w-8 h-8"
+    >
+      2
+    </span>
+    <h3 class="text-base font-normal">Lección 2: Saludos de cortesía</h3>
+  </div>
+</div>

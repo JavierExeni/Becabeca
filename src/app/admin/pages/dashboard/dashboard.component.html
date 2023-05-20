@@ -1,0 +1,30 @@
+<div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+  <app-card title="Mis cursos" buttonLabel="Continuar">
+    <app-language-progress-bar></app-language-progress-bar>
+    <p class="flex items-center gap-2 my-5">
+      <span class="text-lg">Estás avanzando:</span>
+      <span class="text-base text-normal-purple">Alimentos</span>
+    </p>
+  </app-card>
+  <app-card title="Tu puente" buttonLabel="Participar">
+    <p class="text-center text-6xl">
+      <i class="fa-solid fa-bridge text-green"></i>
+    </p>
+    <p class="my-5">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic rerum
+      reprehenderit officia ipsum laboriosam voluptate amet tempora earum optio
+      voluptas dignissimos aliquam, est doloribus eum, omnis eos velit molestias
+      expedita!
+    </p>
+  </app-card>
+  <app-card title="Mis Becas" buttonLabel="Participar" class="xl:row-span-2">
+    <p class="mb-5">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic rerum
+      reprehenderit officia ipsum laboriosam voluptate amet tempora earum optio
+      voluptas dignissimos aliquam, est doloribus eum, omnis eos velit molestias
+      expedita!
+    </p>
+  </app-card>
+  <app-card title="Mis Logros" [buttonHidden]="true"></app-card>
+  <app-card title="Comunidad" buttonLabel="Participar"></app-card>
+</div>
