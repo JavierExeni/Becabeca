@@ -1,0 +1,112 @@
+<div class="h-full grid place-items-center">
+  <div class="shadow-lg rounded-2xl grid grid-cols-2 overflow-hidden">
+    <div class="bg-login bg-no-repeat bg-cover bg-center"></div>
+    <div class="text-center py-8 px-10 relative">
+      <h1 class="text-3xl font-bold mb-3 text-dark-purple">Registrate</h1>
+      <p class="font-normal text-lg">
+        <span class="text-dark-purple"> ¿Tienes cuenta? </span>
+        <a class="cursor-pointer text-green"> ¡Inicia sesión! </a>
+      </p>
+      <div class="flex flex-col gap-4 mt-4">
+        <button
+          type="button"
+          class="rounded-3xl bg-white shadow-sm hover:bg-white/90 border border-[#3b5998] focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium text-sm px-3 py-1 text-center inline-flex gap-4 items-center"
+        >
+          <img
+            class="w-7 filter-facebook"
+            src="assets/images/facebook.svg"
+            alt=""
+          />
+          <span class="text-black font-normal text-sm">
+            Crear con Facebook
+          </span>
+        </button>
+
+        <button
+          type="button"
+          class="rounded-3xl bg-white shadow-sm hover:bg-white/90 border border-[#f15b50] focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium text-sm px-3 py-1 text-center inline-flex gap-4 items-center"
+        >
+          <img src="assets/images/google.svg" class="w-7" alt="" />
+          <span class="text-black font-normal text-sm"> Crear con Google </span>
+        </button>
+      </div>
+      <div class="inline-flex items-center justify-center w-full">
+        <hr class="w-64 h-px my-6 bg-gray-400 border-0" />
+        <span
+          class="absolute px-3 font-normal text-gray-400 -translate-x-1/2 bg-white left-1/2"
+          >o</span
+        >
+      </div>
+
+      <form>
+        <div class="relative mb-4">
+          <div
+            class="absolute top-3 left-0 flex items-center pl-4 pointer-events-none"
+          >
+            <i
+              class="fa-solid fa-envelope w-5 h-5 text-green/50 flex items-center justify-center"
+            ></i>
+          </div>
+          <input
+            type="text"
+            id="input-group-1"
+            class="shadow-md border border-gray-300 text-gray-900 text-sm rounded-3xl focus:ring-blue-500 focus:border-blue-500 block w-full pl-11 p-2.5"
+            placeholder="Tu correo eletrónico"
+          />
+        </div>
+        <div class="relative mb-4">
+          <div
+            class="absolute top-3 left-0 flex items-center pl-4 pointer-events-none"
+          >
+            <i
+              class="fa-solid fa-mobile-screen w-5 h-5 text-green/50 flex items-center justify-center"
+            ></i>
+          </div>
+          <input
+            type="text"
+            id="input-group-1"
+            class="shadow-md border border-gray-300 text-gray-900 text-sm rounded-3xl focus:ring-blue-500 focus:border-blue-500 block w-full pl-11 p-2.5"
+            placeholder="Tu celular"
+          />
+        </div>
+        <div class="relative mb-4">
+          <div
+            class="absolute top-3 left-0 flex items-center pl-4 pointer-events-none"
+          >
+            <i
+              class="fa-solid fa-key w-5 h-5 text-green/50 flex items-center justify-center"
+            ></i>
+          </div>
+          <input
+            type="password"
+            id="input-group-1"
+            class="shadow-md border rounded-3xl border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-11 p-2.5"
+            placeholder="Tu contraseña"
+          />
+        </div>
+        <div class="relative mb-4">
+          <div
+            class="absolute top-3 left-0 flex items-center pl-4 pointer-events-none"
+          >
+            <i
+              class="fa-solid fa-key w-5 h-5 text-green/50 flex items-center justify-center"
+            ></i>
+          </div>
+          <input
+            type="password"
+            id="input-group-1"
+            class="shadow-md border rounded-3xl border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-11 p-2.5"
+            placeholder="Confirmar contraseña"
+          />
+        </div>
+
+        <button
+          type="button"
+          class="text-white w-full bg-gradient-to-r from-[#6a559a] to-[#27a1a6] hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-xl px-5 py-2 text-center"
+        >
+          ¡Regístrarse!
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

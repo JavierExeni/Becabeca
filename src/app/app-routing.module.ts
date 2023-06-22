@@ -8,6 +8,11 @@ const routes: Routes = [
       import('./admin/admin.module').then((m) => m.AdminModule),
   },
   {
+    path: '',
+    loadChildren: () =>
+      import('./landing/landing.module').then((m) => m.LandingModule),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: 'admin',

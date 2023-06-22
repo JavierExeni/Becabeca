@@ -9,6 +9,9 @@ module.exports = {
         "dark-purple": "#4e2b86",
         "normal-purple": "#724c99",
       },
+      backgroundImage: {
+        login: "url('assets/images/login.jpg')",
+      },
     },
   },
   plugins: [],

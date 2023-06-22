@@ -7,3 +7,12 @@ html,
 body {
   height: 100%;
 }
+
+.filter-facebook {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(8%) saturate(3550%)
+    hue-rotate(183deg) brightness(92%) contrast(95%);
+}
+.filter-google {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(59%) saturate(1558%)
+    hue-rotate(322deg) brightness(90%) contrast(112%);
+}
